@@ -8,12 +8,12 @@ Durant le sprint 0 nous avons réalisé le Cahier des Charges de notre projet, l
 
 Durant les 3 autres sprints, nous avons travaillé au développement de notre projet.
 
-##Mon rôle :
+## Mon rôle :
 Je me suis occupé de la réalisation de tout le Front-End hormis le composant "Map".
 
 Vous retrouverez donc sur ce repository tous les composants dont je me suis occupée.
 
-##Notre projet :
+## Notre projet :
 Il s'agit d'un site web permettant aux particuliers de valoriser leurs déchets ménagers compostables en trouvant un point
 de compostage près de chez eux.
 D'un côté ceux qui possèdent un composteur et qui souhaitent le mettre à disposition d'autres usagers et de l'autre des 
