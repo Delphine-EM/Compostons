@@ -1,0 +1,94 @@
+.card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em auto;
+    background-color: rgba(255, 255, 255, 0.750);
+    border-radius: 10px;
+    color: #33685e;
+    justify-content: center;
+    line-height: 1.2em;
+
+    &-link {
+        font-size: 1.2em;
+        padding: 0.5em;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+    &-image {
+        border-radius: 10px;
+        width: 100%;
+    }
+    &-description {
+        padding: 0.5em 0.5em;
+
+        &-title {
+            font-size: 1.5em;
+            padding-bottom: 0.5em;
+            font-weight: 600;
+        }
+        &-intro {
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .card {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 75%;
+
+        &-image {
+            width: 50%;
+        }
+
+        &-description {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+    .card {
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: rgba(255, 255, 255, 0.600);
+
+        &-image {
+            border-radius: 10px;
+            max-width: 500px;
+            margin-top: 1em;
+        }
+        &-link {
+            position:inherit;
+        }
+        &-description {
+            &-title {
+                font-size: 1.7em;
+                padding: 0.5em;
+            }
+            &-intro {
+                font-size: 1.3em;
+                padding: 1rem 1rem 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .card {
+        &-description {
+            &-title {
+                padding: 0.5em;
+            }
+            &-intro {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

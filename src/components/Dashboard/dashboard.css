@@ -1,0 +1,288 @@
+.dashboard_container {
+  width: 70%;
+  margin: auto;
+  padding: var(--gutter);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.329);
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.dashboard_container-title {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--color-primary);
+  padding-bottom: var(--gutter);
+  border-bottom: 1px solid var(--color-primary);
+}
+.dashboard_container .picture-zone_container {
+  margin-top: var(--gutter);
+  display: none;
+}
+.dashboard_container .dashboard_form_container {
+  margin-bottom: var(--gutter);
+}
+.dashboard_container .dashboard_form_container .dashboard_form-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-bottom: calc(var(--gutter) * 3);
+}
+.dashboard_container .user_infos {
+  padding: calc(var(--gutter) * 3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dashboard_container .user_infos-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dashboard_container .user_infos-input_element {
+  display: flex;
+  align-items: center;
+  padding: var(--gutter);
+}
+.dashboard_container .compost_infos {
+  display: flex;
+  flex-direction: column;
+  padding: var(--gutter);
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.589);
+  border-radius: 10px;
+}
+.dashboard_container .compost_infos-select {
+  padding: var(--gutter);
+  margin-bottom: calc(var(--gutter) * 2.5);
+}
+.dashboard_container .compost_infos-select #newCategory {
+  margin-top: 1em;
+  padding: 0.3rem;
+  font-weight: 600;
+  border-radius: 5px;
+  color: black;
+}
+.dashboard_container .compost_infos-select-option {
+  font-weight: 600;
+  border: 1px solid black;
+}
+.dashboard_container .compost_infos .compost_infos-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.dashboard_container .compost_infos .compost_infos-footer .delete-paragraph {
+  margin-right: 1em;
+  font-weight: 500;
+}
+.dashboard_container .compost_infos .compost_infos-footer .delete__button {
+  background-color: var(--color-alert);
+  font-size: medium;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: var(--gutter);
+  padding: 0.3rem;
+}
+.dashboard_container .compost_infos .dashboard_searchLocation {
+  display: flex;
+  flex-direction: column;
+  padding: var(--gutter);
+}
+.dashboard_container .compost_infos .dashboard_searchLocation .input_label {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.dashboard_container .compost_infos .dashboard_searchLocation .dashboard_searchLocation-input {
+  padding: 0.3rem;
+  border-radius: 5px;
+  width: 300px;
+}
+.dashboard_container .compost_infos .dashboard_searchLocation .dashboard_searchLocation_displayResults {
+  position: relative;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15);
+  border: 1px solid #d4d4d5;
+}
+.dashboard_container .compost_infos .dashboard_searchLocation .dashboard_searchLocation_displayResults .dashboard_searchLocation_displayResults_item {
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.85rem;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+  cursor: pointer;
+}
+.dashboard_container .compost_infos .dashboard_searchLocation .dashboard_searchLocation_displayResults .dashboard_searchLocation_displayResults_item:hover {
+  background-color: #f9fafb;
+}
+.dashboard_container .section_title {
+  width: 80%;
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-bottom: calc(var(--gutter) * 2);
+  padding-bottom: var(--gutter);
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.dashboard_container .input_label {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.dashboard_container .input_field {
+  margin-left: var(--gutter);
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.dashboard_container .submit__button {
+  background-color: var(--color-primary);
+  font-size: large;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: var(--gutter);
+  padding: calc(var(--gutter) / 2);
+}
+.dashboard_container .delete__button {
+  background-color: var(--color-alert);
+  font-size: large;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: var(--gutter);
+  padding: 0.35rem;
+}
+.dashboard_container .button-block {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: var(--gutter);
+}
+.dashboard_container .dashboard_validMessage {
+  background-color: var(--color-primary);
+  padding: var(--gutter);
+  color: white;
+  margin: var(--gutter);
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .dashboard_container {
+    width: 65%;
+  }
+
+  .dashboard_form-blocks {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: var(--gutter);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+  .input_field {
+    width: 150px;
+  }
+
+  .delete__button {
+    width: 30%;
+  }
+
+  .submit__button {
+    width: 30%;
+  }
+
+  .dashboard_form-blocks {
+    margin-top: var(--gutter);
+  }
+  .dashboard_form-blocks .user_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0.5rem;
+  }
+  .dashboard_form-blocks .user_infos-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .dashboard_form-blocks .compost_infos {
+    width: 50%;
+    margin: auto;
+    padding: 0.5em;
+  }
+  .dashboard_form-blocks .compost_infos #newCategory {
+    max-width: 200px;
+  }
+  .dashboard_form-blocks .compost_infos .dashboard_searchLocation-input {
+    padding: 0.3rem;
+    border-radius: 5px;
+    max-width: 200px;
+  }
+  .dashboard_form-blocks .compost_infos .dashboard_searchLocation .dashboard_searchLocation_displayResults {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .dashboard_container {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dashboard_container-title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .dashboard_container .input_label {
+    margin-bottom: 0.5em;
+  }
+  .dashboard_container .section_title {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+  }
+  .dashboard_container .input_field {
+    margin: auto;
+  }
+  .dashboard_container .dashboard_form_container {
+    margin-bottom: var(--gutter);
+  }
+  .dashboard_container .dashboard_form_container .dashboard_form-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: var(--gutter);
+  }
+  .dashboard_container .dashboard_form_container .dashboard_form-blocks .user_infos {
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+  }
+  .dashboard_container .dashboard_form_container .dashboard_form-blocks .user_infos-input_element {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard_container .dashboard_form_container .dashboard_form-blocks .compost_infos {
+    width: 90%;
+    margin: auto;
+  }
+  .dashboard_container .dashboard_form_container .dashboard_form-blocks .compost_infos #newCategory {
+    max-width: 200px;
+  }
+  .dashboard_container .dashboard_searchLocation-input {
+    padding: 0.3rem;
+    border-radius: 5px;
+    max-width: 200px;
+  }
+  .dashboard_container .dashboard_searchLocation .dashboard_searchLocation_displayResults {
+    max-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=dashboard.css.map */
