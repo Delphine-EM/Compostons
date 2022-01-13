@@ -9,7 +9,7 @@ Durant le sprint 0 nous avons réalisé le Cahier des Charges de notre projet, l
 Durant les 3 autres sprints, nous avons travaillé au développement de notre projet.
 
 ## Mon rôle :
-Je me suis occupé de la réalisation de tout le Front-End hormis le composant "Map".
+Je me suis occupé de la réalisation d'une grosse partie du Front-End.
 
 Vous retrouverez donc sur ce repository tous les composants dont je me suis occupée.
 
